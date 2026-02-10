@@ -28,7 +28,7 @@ export const Header = () => {
               aria-label="PharmaZen home"
             >
               <img
-                src="/pharmazen-logo.svg"
+                src={`${import.meta.env.BASE_URL}pharmazen-logo.svg`}
                 alt="PharmaZen logo"
                 className="h-8 w-auto"
               />
@@ -64,7 +64,11 @@ export const Header = () => {
                 className="p-2 text-white"
                 onClick={() => setIsMenuOpen((v) => !v)}
               >
-                {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                {isMenuOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <Menu className="w-6 h-6" />
+                )}
               </button>
             </div>
           </div>
