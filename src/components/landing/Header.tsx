@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import logo from "@/assets/pharmazen-logo.svg";
 
 const navLinks = [
   { name: "Features", href: "/#features" },
@@ -20,16 +21,18 @@ export const Header = () => {
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#006e62]/95 backdrop-blur-xl border-b border-[#ffffff1a] text-white">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="relative flex items-center justify-between h-14 lg:h-20">
+
             {/* Logo */}
             <Link
               to="/"
               className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 lg:static lg:transform-none flex items-center gap-2"
               aria-label="PharmaZen home"
             >
-              import logo from "@/assets/pharmazen-logo.svg";
-
-<img src={logo} alt="Pharmazen logo" />
-
+              <img
+                src={logo}
+                alt="PharmaZen logo"
+                className="h-8 w-auto"
+              />
             </Link>
 
             {/* Desktop Nav */}
@@ -93,7 +96,6 @@ export const Header = () => {
                   </Link>
                 ))}
 
-                {/* Mobile CTA */}
                 <div className="flex flex-col gap-2 pt-4 border-t border-border">
                   <Button variant="outline" className="w-full">
                     Login
