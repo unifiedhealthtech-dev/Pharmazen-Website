@@ -10,7 +10,7 @@ if (!rootElement) {
 }
 
 createRoot(rootElement).render(
-  <BrowserRouter basename="/Pharmazen-Website">
+  <BrowserRouter>
     <App />
   </BrowserRouter>
 );
