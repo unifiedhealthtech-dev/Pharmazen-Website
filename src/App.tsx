@@ -25,11 +25,11 @@ const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        {/* Toast systems */}
+        {/* Toasts */}
         <Toaster />
         <Sonner />
 
-        {/* Global UI helpers */}
+        {/* Global helpers */}
         <ScrollProgress />
         <ScrollToTop />
         <WhatsAppChat />
