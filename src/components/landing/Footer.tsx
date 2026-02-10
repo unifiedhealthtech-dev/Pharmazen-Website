@@ -36,7 +36,7 @@ export const Footer = () => {
           <div className="lg:col-span-2">
             <a href="/" className="flex items-center gap-3 mb-4">
               <img
-                src="/pharmazen-logo.svg"
+                src={`${import.meta.env.BASE_URL}pharmazen-logo.svg`}
                 alt="PharmaZen logo"
                 className="h-8 w-auto"
               />
@@ -147,3 +147,4 @@ export const Footer = () => {
     </footer>
   );
 };
+
