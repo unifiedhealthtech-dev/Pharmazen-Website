@@ -26,11 +26,10 @@ export const Header = () => {
               className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 lg:static lg:transform-none flex items-center gap-2"
               aria-label="PharmaZen home"
             >
-              <img
-                src="/Pharmazen-Pro/pharmazen-logo.svg"
-                alt="PharmaZen"
-                className="h-8 w-auto lg:h-10"
-              />
+              import logo from "@/assets/pharmazen-logo.svg";
+
+<img src={logo} alt="Pharmazen logo" />
+
             </Link>
 
             {/* Desktop Nav */}
