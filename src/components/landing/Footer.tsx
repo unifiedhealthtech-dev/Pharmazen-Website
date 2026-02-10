@@ -35,11 +35,10 @@ export const Footer = () => {
           <div className="lg:col-span-2">
             <a href="#" className="flex items-center gap-3 mb-4">
               {/* ✅ Correct GitHub Pages path */}
-              <img
-                src="/Pharmazen-Pro/pharmazen-logo.svg"
-                alt="PharmaZen"
-                className="h-10 w-auto"
-              />
+              import logo from "@/assets/pharmazen-logo.svg";
+
+<img src={logo} alt="Pharmazen logo" />
+
             </a>
 
             <p className="text-white/70 mb-6 max-w-xs">
