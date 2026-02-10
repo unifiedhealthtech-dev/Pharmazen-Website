@@ -31,19 +31,20 @@ export const Footer = () => {
     <footer className="bg-[#006e62]/95 text-white">
       <div className="container mx-auto px-4 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-12">
+
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="#" className="flex items-center gap-3 mb-4">
-              {/* ✅ Correct GitHub Pages path */}
-              import logo from "@/assets/pharmazen-logo.svg";
-
-<img src={logo} alt="Pharmazen logo" />
-
+            <a href="/" className="flex items-center gap-3 mb-4">
+              <img
+                src="/pharmazen-logo.svg"
+                alt="PharmaZen logo"
+                className="h-8 w-auto"
+              />
             </a>
 
             <p className="text-white/70 mb-6 max-w-xs">
-              The complete digital platform for pharma and healthcare. Transform
-              your business today.
+              The complete digital platform for pharma and healthcare.
+              Transform your business today.
             </p>
 
             <div className="space-y-2 text-sm text-white/70">
@@ -62,7 +63,7 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* Links */}
+          {/* Product */}
           <div>
             <h4 className="font-semibold mb-4">Product</h4>
             <ul className="space-y-2">
@@ -79,6 +80,7 @@ export const Footer = () => {
             </ul>
           </div>
 
+          {/* Company */}
           <div>
             <h4 className="font-semibold mb-4">Company</h4>
             <ul className="space-y-2">
@@ -95,6 +97,7 @@ export const Footer = () => {
             </ul>
           </div>
 
+          {/* Support */}
           <div>
             <h4 className="font-semibold mb-4">Support</h4>
             <ul className="space-y-2">
@@ -111,6 +114,7 @@ export const Footer = () => {
             </ul>
           </div>
 
+          {/* Legal */}
           <div>
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-2">
@@ -129,7 +133,7 @@ export const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-8 border-t border-white/10 space-y-4">
+        <div className="mt-12 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-white/60">
               © 2025 PharmaZen. All rights reserved.
@@ -138,7 +142,6 @@ export const Footer = () => {
               Built for the Future of Pharma
             </span>
           </div>
-          
         </div>
       </div>
     </footer>
