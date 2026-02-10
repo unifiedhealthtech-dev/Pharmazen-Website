@@ -3,8 +3,14 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 
-createRoot(document.getElementById("root")!).render(
-  <BrowserRouter basename="/Pharmazen-Pro/">
+const rootElement = document.getElementById("root");
+
+if (!rootElement) {
+  throw new Error("Root element not found");
+}
+
+createRoot(rootElement).render(
+  <BrowserRouter basename="/Pharmazen-Website">
     <App />
   </BrowserRouter>
 );
