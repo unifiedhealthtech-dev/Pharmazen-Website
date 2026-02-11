@@ -20,19 +20,13 @@ export const FAQSection = () => {
                     q: "Who can use PharmaZen?",
                     a: "PharmaZen is designed for pharmacies (retail and hospital), pharmaceutical distributors, doctors/clinics, and healthcare administrators. We offer tailored solutions for each user type.",
                 },
-                {
-                    q: "Is PharmaZen available on mobile?",
-                    a: "Yes! PharmaZen is available as a web application and mobile apps for both iOS and Android. You can manage your pharmacy from anywhere, anytime.",
-                },
+               
             ],
         },
         {
             category: "Pricing & Plans",
             questions: [
-                {
-                    q: "How much does PharmaZen cost?",
-                    a: "We offer flexible pricing plans starting from ₹2,999/month for small pharmacies. We also have Professional and Enterprise plans with advanced features. All plans include a 14-day free trial with no credit card required.",
-                },
+                
                 {
                     q: "Can I switch plans later?",
                     a: "Absolutely! You can upgrade or downgrade your plan at any time. Changes take effect immediately, and we'll prorate any charges.",
