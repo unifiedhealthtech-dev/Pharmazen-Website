@@ -71,7 +71,7 @@ const Privacy = () => {
                             Privacy <span className="gradient-text">Policy</span>
                         </h1>
                         <p className="text-muted-foreground mb-4">
-                            Last updated: February 5, 2026
+                            Last updated: February 11, 2026
                         </p>
                         <p className="text-lg text-muted-foreground mb-12">
                             At PharmaZen, we take your privacy seriously. This Privacy Policy explains how we collect,
