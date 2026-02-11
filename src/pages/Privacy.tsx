@@ -120,9 +120,9 @@ const Privacy = () => {
                                 If you have any questions about this Privacy Policy, please contact us:
                             </p>
                             <div className="space-y-2 text-muted-foreground">
-                                <p>Email: <a href="mailto:privacy@pharmazen.com" className="text-primary hover:underline">privacy@pharmazen.com</a></p>
-                                <p>Phone: <a href="tel:+919876543210" className="text-primary hover:underline">+91 98765 43210</a></p>
-                                <p>Address: 123 Healthcare Plaza, Mumbai, Maharashtra 400001</p>
+                                <p>Email: <a href="mailto:unifiedhealthtech@gmail.com" className="text-primary hover:underline">unifiedhealthtech@gmail.com</a></p>
+                                <p>Phone: <a href="tel:+918919216351" className="text-primary hover:underline">+91 8919216351</a></p>
+                                <p>Address: Nalgonda, Telangana</p>
                             </div>
                         </motion.div>
                     </motion.div>
