@@ -78,12 +78,6 @@ const Contact = () => {
             link: "tel:+918919216351",
         },
         {
-            icon: MapPin,
-            title: "Visit Us",
-            content: "132, Chandragiri Villas, Nalgonda, Telangana",
-            link: "https://www.google.com/maps?q=132%20Chandragiri%20Villas%2C%20Nalgonda",
-        },
-        {
             icon: Clock,
             title: "Business Hours",
             content: "Mon-Fri: 9:00 AM - 6:00 PM IST",
@@ -121,7 +115,7 @@ const Contact = () => {
 
                 {/* Contact Info Cards */}
                 <section className="container mx-auto px-4 lg:px-8 py-8">
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                         {contactInfo.map((info, index) => {
                             const Icon = info.icon;
                             return (
