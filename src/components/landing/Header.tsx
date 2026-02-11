@@ -24,7 +24,7 @@ export const Header = () => {
             {/* Logo */}
             <Link
               to="/"
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 lg:static lg:transform-none flex items-center gap-2"
+              className="flex items-center gap-2 z-10"
               aria-label="PharmaZen home"
             >
               <img
@@ -34,8 +34,8 @@ export const Header = () => {
               />
             </Link>
 
-            {/* Desktop Nav */}
-            <nav className="hidden lg:flex items-center gap-8">
+            {/* Desktop Nav - Centered */}
+            <nav className="hidden lg:flex items-center gap-8 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
@@ -46,16 +46,6 @@ export const Header = () => {
                 </Link>
               ))}
             </nav>
-
-            {/* Desktop CTA */}
-            <div className="hidden lg:flex items-center gap-4">
-              <Button variant="ghost" size="sm">
-                Login
-              </Button>
-              <Button variant="default" size="sm" className="glow">
-                Get Started
-              </Button>
-            </div>
 
             {/* Mobile Menu Button */}
             <div className="flex items-center gap-2 lg:hidden">
@@ -94,13 +84,6 @@ export const Header = () => {
                     {link.name}
                   </Link>
                 ))}
-
-                <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                  <Button variant="outline" className="w-full">
-                    Login
-                  </Button>
-                  <Button className="w-full">Get Started</Button>
-                </div>
               </nav>
             </motion.div>
           )}
