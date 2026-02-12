@@ -98,30 +98,7 @@ const About = () => {
                     </motion.div>
                 </section>
 
-                {/* Stats */}
-                <section className="container mx-auto px-4 lg:px-8 py-12">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        {stats.map((stat, index) => {
-                            const Icon = stat.icon;
-                            return (
-                                <motion.div
-                                    key={index}
-                                    initial={{ opacity: 0, scale: 0.9 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
-                                    viewport={{ once: true }}
-                                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                                    className="text-center glass-card p-6"
-                                >
-                                    <Icon className="w-8 h-8 mx-auto mb-3 text-primary" />
-                                    <div className="text-3xl md:text-4xl font-display font-bold gradient-text mb-1">
-                                        {stat.value}
-                                    </div>
-                                    <div className="text-sm text-muted-foreground">{stat.label}</div>
-                                </motion.div>
-                            );
-                        })}
-                    </div>
-                </section>
+
 
                 {/* Mission & Vision */}
                 <section className="container mx-auto px-4 lg:px-8 py-16">
@@ -209,46 +186,46 @@ const About = () => {
                     The leadership team data is preserved in the 'team' array above.
                 */}
                 {false && (
-                <section className="container mx-auto px-4 lg:px-8 py-16">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
-                        className="text-center mb-12"
-                    >
-                        <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-                            Meet Our Leadership
-                        </h2>
-                        <p className="text-muted-foreground max-w-2xl mx-auto">
-                            Experienced professionals dedicated to transforming healthcare
-                        </p>
-                    </motion.div>
+                    <section className="container mx-auto px-4 lg:px-8 py-16">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                            className="text-center mb-12"
+                        >
+                            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
+                                Meet Our Leadership
+                            </h2>
+                            <p className="text-muted-foreground max-w-2xl mx-auto">
+                                Experienced professionals dedicated to transforming healthcare
+                            </p>
+                        </motion.div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-                        {team.map((member, index) => (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, y: 30 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
-                                className="glass-card p-6 text-center group hover:-translate-y-2 transition-transform duration-300"
-                            >
-                                <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 ring-2 ring-primary/20 group-hover:ring-primary/50 transition-all">
-                                    <img
-                                        src={member.image}
-                                        alt={member.name}
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
-                                <h3 className="text-xl font-display font-bold mb-1">{member.name}</h3>
-                                <p className="text-sm text-primary mb-2">{member.role}</p>
-                                <p className="text-xs text-muted-foreground">{member.bio}</p>
-                            </motion.div>
-                        ))}
-                    </div>
-                </section>
+                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                            {team.map((member, index) => (
+                                <motion.div
+                                    key={index}
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                                    className="glass-card p-6 text-center group hover:-translate-y-2 transition-transform duration-300"
+                                >
+                                    <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 ring-2 ring-primary/20 group-hover:ring-primary/50 transition-all">
+                                        <img
+                                            src={member.image}
+                                            alt={member.name}
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
+                                    <h3 className="text-xl font-display font-bold mb-1">{member.name}</h3>
+                                    <p className="text-sm text-primary mb-2">{member.role}</p>
+                                    <p className="text-xs text-muted-foreground">{member.bio}</p>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </section>
                 )}
 
                 {/* Timeline */}
