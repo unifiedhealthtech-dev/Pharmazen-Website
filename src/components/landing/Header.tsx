@@ -28,7 +28,7 @@ export const Header = () => {
               aria-label="PharmaZen home"
             >
               <img
-                src={`${import.meta.env.BASE_URL}pharmazen-logo.svg`}
+                src="https://www.pharmazen.pro/pharmazen-logo.svg"
                 alt="PharmaZen logo"
                 className="h-8 w-auto"
               />
