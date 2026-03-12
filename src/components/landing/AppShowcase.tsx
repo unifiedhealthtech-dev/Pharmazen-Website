@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { LucideIcon, Check, TrendingUp, Package, Users, DollarSign, ShoppingCart, AlertCircle } from "lucide-react";
+import { LucideIcon, Check, TrendingUp, Package, Users, DollarSign, ShoppingCart, AlertCircle, MapPin, Bell } from "lucide-react";
 
 interface Feature {
   text: string;
@@ -35,13 +35,21 @@ export const AppShowcase = ({
         { icon: AlertCircle, label: "Low Stock", value: "23", color: "text-orange-500", bg: "bg-orange-500/10" },
         { icon: TrendingUp, label: "Growth", value: "+12%", color: "text-primary", bg: "bg-primary/10" },
       ];
-    } else {
+    } else if (badge === "Distributor Pro App") {
       // Distributor Pro App
       return [
         { icon: Package, label: "Pending Orders", value: "48", color: "text-blue-500", bg: "bg-blue-500/10" },
         { icon: Users, label: "Active Retailers", value: "156", color: "text-green-500", bg: "bg-green-500/10" },
         { icon: DollarSign, label: "Outstanding", value: "₹2.4L", color: "text-orange-500", bg: "bg-orange-500/10" },
         { icon: TrendingUp, label: "Dispatch Rate", value: "94%", color: "text-primary", bg: "bg-primary/10" },
+      ];
+    } else {
+      // Salesperson App
+      return [
+        { icon: MapPin, label: "Daily Visits", value: "14/20", color: "text-blue-500", bg: "bg-blue-500/10" },
+        { icon: ShoppingCart, label: "Orders", value: "32", color: "text-green-500", bg: "bg-green-500/10" },
+        { icon: TrendingUp, label: "Sales", value: "₹1.2L", color: "text-primary", bg: "bg-primary/10" },
+        { icon: Bell, label: "Tasks", value: "5", color: "text-orange-500", bg: "bg-orange-500/10" },
       ];
     }
   };
