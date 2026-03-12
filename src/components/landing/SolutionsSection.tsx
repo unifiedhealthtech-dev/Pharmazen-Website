@@ -1,6 +1,6 @@
 import { AnimatedSection } from "./AnimatedSection";
 import { AppShowcase } from "./AppShowcase";
-import { Store, Truck } from "lucide-react";
+import { Store, Truck, Smartphone } from "lucide-react";
 
 const solutions = [
   {
@@ -35,6 +35,22 @@ const solutions = [
     outcome: "Fewer errors. Faster dispatch. Stronger cash flow. Lower returns and expiry risk.",
     isReversed: true,
   },
+  {
+    icon: Smartphone,
+    badge: "Salesperson App",
+    title: "Field Sales, Simplified & Connected",
+    subtitle: "A mobile application for salespersons to connect retailers directly with the distributor system.",
+    features: [
+      { text: "Assisted stock ordering with real-time inventory visibility" },
+      { text: "Daily visit scheduling and route optimization" },
+      { text: "Quick order creation and recent orders overview" },
+      { text: "Sales performance tracking and summaries" },
+      { text: "Automated notifications from the distributor" },
+      { text: "Seamless Retailer and Distributor Management and onboarding" },
+    ],
+    outcome: "Higher order accuracy. Faster turnarounds. Better tracking for field reps.",
+    isReversed: false,
+  },
 ];
 
 export const SolutionsSection = () => {
@@ -44,11 +60,11 @@ export const SolutionsSection = () => {
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-12">
           <span className="app-badge mb-4">Integrated Solutions</span>
           <h2 className="text-3xl md:text-4xl lg:text-4xl font-display font-bold text-foreground mb-6">
-            Two Powerful Apps,{" "}
+            Comprehensive Solutions,{" "}
             <span className="gradient-text">One Unified Platform</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Whether you're a pharmacy or distributor—PharmaZen has the tools you need.
+            Whether you're a pharmacy, distributor, or field salesperson—PharmaZen has the tools you need.
           </p>
         </AnimatedSection>
 
